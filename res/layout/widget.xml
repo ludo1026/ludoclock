@@ -3,11 +3,26 @@
     android:id="@+id/Widget"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:gravity="center" >
-
-    <AnalogClock
-        android:id="@+id/AnalogClock"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    android:gravity="center"
+	android:background="#00000000"
+>
+	<LinearLayout
+		android:id="@+id/linearLayout"
+		android:layout_width="260px"
+		android:layout_height="260px"
+		android:gravity="center"
+		android:background="#55000000"
+		android:shadowColor="#ffffff"
+		android:shadowDx="5"
+		android:shadowDy="5"
+	>
+		<AnalogClock
+			android:id="@+id/AnalogClock"
+			android:layout_width="230px"
+			android:layout_height="230px" 
+			android:background="#99000000"
+			android:padding="10px"
+		/>
+	</LinearLayout>
 
 </RelativeLayout>
